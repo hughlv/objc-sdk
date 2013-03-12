@@ -127,7 +127,7 @@
         speed = fileSize / uploadTime;
     }
     
-    NSMutableString *message = [NSMutableString stringWithFormat:@"Successfully uploaded %@ \n Hash: %@ \n File size: %lld \n Speed: %d bytes/sec \n URL: http://bucket.qiniudn.com/%@",  filePath, hash, fileSize, speed, _key];
+    NSMutableString *message = [NSMutableString stringWithFormat:@"Successfully uploaded %@ \n Hash: %@ \n File size: %lld \n Speed: %d bytes/sec \n URL: http://%@.qiniudn.com/%@",  filePath, hash, fileSize, speed, kBucketName, _key];
     
     NSLog(@"%@", message);
     
